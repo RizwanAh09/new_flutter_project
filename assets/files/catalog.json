@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iphone 14 Pro",
+      "description": "Apple iphone with dynamic island ",
+      "price": 150000,
+      "color": "#889977",
+      "image":
+      "https://img3.gadgetsnow.com/gd/images/products/additional/large/G390846_View_1/mobiles/smartphones/apple-iphone-14-pro-1-tb-deep-purple-6-gb-ram-.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Macbook Air",
+      "description": "Apple macbook air with apple silicon ",
+      "price": 80000,
+      "color": "#889977",
+      "image":
+      "https://img3.gadgetsnow.com/gd/images/products/additional/large/G214045_View_1/computer-laptop/laptops/new-apple-macbook-air-with-apple-m1-chip-13-inch-8gb-ram-256gb-ssd-silver-mgn93hn-a-latest-model-.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Airpods pro",
+      "description": "Apple Airpods with extra battery life ",
+      "price": 25000,
+      "color": "#889977",
+      "image":
+      "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1660803972361"
+    },
+    {
+      "id": 4,
+      "name": "Galaxy z flip 3",
+      "description": "Samsung Galaxy fLip Phone ",
+      "price": 75000,
+      "color": "#889977",
+      "image":
+      "https://www.addmecart.com/wp-content/uploads/2021/12/ps16.1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Apple Watch",
+      "description": "Apple Watch in light color ",
+      "price": 25000,
+      "color": "#889977",
+      "image":
+      "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MKU93_VW_34FR+watch-40-alum-starlight-nc-se_VW_34FR_WF_CO_GEO_IN?wid=375&hei=356&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1632171039000%2C1661754115495"
+    },
+    {
+      "id": 6,
+      "name": "Google Pixel",
+      "description": "Google pixel is a great mobile ",
+      "price": 35000,
+      "color": "#889977",
+      "image":
+      "https://cdn.shopify.com/s/files/1/0583/2202/6680/products/71rMn8p56QL._SL1500_480x.jpg?v=1657054373"
+    },
+    {
+      "id": 7,
+      "name": "Head Phone",
+      "description": "P9 Plus Compatible Air-pods Headphone Max Bluetooth Headset ",
+      "price": 25000,
+      "color": "#889977",
+      "image":
+      "https://m.media-amazon.com/images/I/61TIuJVrLgL._AC_UY218_.jpg"
+    }
+  ]
+}
