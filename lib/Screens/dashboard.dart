@@ -31,6 +31,7 @@ class _DashBoardState extends State<DashBoard> {
     setState(() {});
   }
 
+
   @override
   Widget build(BuildContext context) {
     // final dummyList = List.generate(10, (index) => CatalogModel.items[0]);////  dummy list
