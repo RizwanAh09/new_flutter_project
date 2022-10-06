@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 
 class CatalogModel {
-  static List<Item> items = [
-  ];
+  static List<Item> items = [];
 }
 
 class Item {

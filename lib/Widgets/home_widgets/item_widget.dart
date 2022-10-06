@@ -17,8 +17,7 @@ class ItemWidget extends StatelessWidget {
           leading: SizedBox(
             height: 100,
             width: 50,
-            child: Image.network(
-                item.image),
+            child: Image.network(item.image),
           ),
           title: Text(item.name),
           subtitle: Text(item.description),

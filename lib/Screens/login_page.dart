@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_flutter_project/Screens/dashboard.dart';
 import 'package:new_flutter_project/Utils/routs.dart';
+import 'package:new_flutter_project/Widgets/themes.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -22,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
       });
       await Future.delayed(Duration(seconds: 1));
       await Navigator.pushNamed(context, MyRoutes.dashBoardRoute);
-       setState(() {
+      setState(() {
         changeButton = false;
       });
     }
@@ -111,13 +112,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         onTap: () => moveToDashboard(context),
                         child: AnimatedContainer(
                           duration: Duration(seconds: 1),
-                          height: 40,
+                          height: 50,
                           width: changeButton ? 50 : 150,
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
                             // shape: changeButton? BoxShape.circle
                             //     : BoxShape.rectangle,
-                            color: Colors.deepPurple,
+                            color: MyThemes.darkBluish,
                             borderRadius: BorderRadius.circular(50),
                           ),
                           child: changeButton

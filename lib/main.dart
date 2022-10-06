@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:new_flutter_project/Utils/routs.dart';
 import 'package:new_flutter_project/Widgets/themes.dart';
 
+import 'Screens/cart_page.dart';
 import 'Screens/form_screen.dart';
 
 void main() {
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.homeRoute: (context) => HomeScreen(),
         MyRoutes.dashBoardRoute: (context) => DashBoard(),
         MyRoutes.myForm:(context) => MyForm(),
+        MyRoutes.cartRoute:(context) => CartPage(),
         // "/dashBoard" : (context) => DashBoard(),
         // "/home" : (context) => HomeScreen(),
       },
