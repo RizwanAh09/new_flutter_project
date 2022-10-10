@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:new_flutter_project/Models/catalog.dart';
 import 'package:new_flutter_project/Screens/product_details.dart';
@@ -16,13 +17,13 @@ class CatalogList extends StatelessWidget {
         final catalog = CatalogModel.items[index];
         return InkWell(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(
-                builder: (context) {
-                  return ProductDetails(
-                    catalog: catalog,
-                  );
-                },
-              ));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProductDetails(
+                      catalog: catalog,
+                    ),
+                  ));
             },
             child: CatalogItem(catalog: catalog));
       },
@@ -45,17 +46,28 @@ class CatalogItem extends StatelessWidget {
       child: Row(
         children: [
           Hero(
-            tag: Key(catalog.id.toString()),
-            child: Image.network(catalog.image)
-                .box
-                .rounded
-                .p16
-                .color(MyThemes.creamColor)
-                .make()
-                .p16()
-                .h40(context)
-                .w40(context),
-          ),
+              tag: Key(catalog.id.toString()),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Container(
+                    padding: EdgeInsets.all(16),
+                    height: 120,
+                    width: 120,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: MyThemes.creamColor,
+                    ),
+                    child: Image.network(catalog.image)),
+              )
+              // .box
+              // .rounded
+              // .p16
+              // .color(MyThemes.creamColor)
+              // .make()
+              // .p16()
+              // .h40(context)
+              // .w40(context),
+              ),
           Expanded(
               child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -73,7 +85,7 @@ class CatalogItem extends StatelessWidget {
                 ],
               ).pOnly(right: 12.0),
             ],
-          ))
+          )),
         ],
       ),
     ).white.square(150).rounded.make().py12();
@@ -105,6 +117,8 @@ class _AddToCartState extends State<AddToCartButton> {
             StadiumBorder(),
           ),
         ),
-        child: isAdded ? const Icon(Icons.done) : "Add to cart".text.make());
+        child: isAdded
+            ? const Icon(Icons.done)
+            : const Icon(CupertinoIcons.cart_badge_plus));
   }
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:new_flutter_project/Widgets/themes.dart';
-
 import '../Widgets/cart_widgets/cart_total.dart';
 
 class CartPage extends StatelessWidget {
@@ -22,10 +21,11 @@ class CartPage extends StatelessWidget {
               fontWeight: FontWeight.bold),
         ),
       ),
+
       body: Column(
         children: const [
           Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: EdgeInsets.symmetric(horizontal: 16,vertical: 10),
             child: _CartItems(),
           ),
           Divider(),
@@ -47,13 +47,15 @@ class _CartItemsState extends State<_CartItems> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
+      height: 550,
       child: ListView.builder(
         itemCount: 5,
         itemBuilder: (context, index) =>  ListTile(
           leading:  const Icon(Icons.done),
           trailing: IconButton(icon:  const Icon(Icons.remove_circle),
-          onPressed: (){},
+          onPressed: (){
+
+          },
           ),
           title:  const Text("Product Item"),
         ),

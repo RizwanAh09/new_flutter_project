@@ -45,8 +45,8 @@ class _DashBoardState extends State<DashBoard> {
       floatingActionButton:FloatingActionButton(onPressed: (){
         Navigator.pushNamed(context, MyRoutes.cartRoute);
       },
-      child: const Icon(CupertinoIcons.cart),
-      backgroundColor: MyThemes.darkBluish),
+      backgroundColor: MyThemes.darkBluish,
+      child: const Icon(CupertinoIcons.cart)),
       backgroundColor: MyThemes.creamColor,
       body: SafeArea(
         child: Container(

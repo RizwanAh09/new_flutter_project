@@ -7,7 +7,7 @@ class CartTotal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 80,
+      height: 90,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
