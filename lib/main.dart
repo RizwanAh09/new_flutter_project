@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       initialRoute:MyRoutes.dashBoardRoute,
 
       routes: {
-        "/": (context) => DashBoard(),
+        "/": (context) =>  DashBoard(),
         MyRoutes.homeRoute: (context) => HomeScreen(),
         MyRoutes.dashBoardRoute: (context) => DashBoard(),
         MyRoutes.myForm:(context) => MyForm(),

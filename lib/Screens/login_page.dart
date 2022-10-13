@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       InkWell(
                         onTap: () => moveToDashboard(context),
                         child: AnimatedContainer(
-                          duration: Duration(seconds: 1),
+                          duration: const Duration(seconds: 1),
                           height: 50,
                           width: changeButton ? 50 : 150,
                           alignment: Alignment.center,

@@ -20,6 +20,9 @@ class DashBoard extends StatefulWidget {
 }
 
 class _DashBoardState extends State<DashBoard> {
+
+  final url = "this is url";   // not in use
+
   @override
   void initState() {
     super.initState();
@@ -28,8 +31,8 @@ class _DashBoardState extends State<DashBoard> {
 
   loadData() async {
     await Future.delayed(const Duration(seconds: 2));
-    final catalogJson =
-        await rootBundle.loadString("assets/files/catalog.json");
+    final catalogJson = await rootBundle.loadString("assets/files/catalog.json"); ////get jason data from local file
+    // final response = await http.get(Uri.parse(url));  //// get data from network
     final decodedData = jsonDecode(catalogJson);
     var productsData = decodedData["products"];
     CatalogModel.items = List.from(productsData)

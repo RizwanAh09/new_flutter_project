@@ -19,7 +19,7 @@ class MyThemes{
 
   //Colors
 
-static Color creamColor = Color(0xfff5f5f5);
-static Color darkBluish = Color(0xff403b58);
+static Color creamColor = const Color(0xfff5f5f5);
+static Color darkBluish = const Color(0xff403b58);
 
 }
